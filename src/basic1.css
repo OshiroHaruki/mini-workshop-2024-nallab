@@ -1,0 +1,40 @@
+/* @theme basic1 */
+/* シンプルなテーマ */
+
+@import "default";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+:root {
+    --color-background: #fff;
+    --my-color: #66CCCC; /* 好きな色 */
+}
+
+section {
+    font-family: "Open Sans", sans-serif;
+    justify-content: left;
+    align-items: left;
+    border-bottom: 20px solid var(--my-color) ;
+}
+
+section h1 {
+    color: #000000;
+}
+
+section.lead {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    border-bottom: none ;
+}
+section.lead h1 {
+    text-align: left;
+}
+section.lead h1:after {
+    content: '';
+    position: relative;
+    bottom: 0px;
+    display: block;
+    width: 1000px;
+    height: 10px;
+    background-color: var(--my-color);
+}
